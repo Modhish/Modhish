@@ -5,9 +5,7 @@ This repository showcases the projects and skills I've developed . You will find
 ## Table of Contents
 1. [About Me](#about-me)
 2. [Skills & Technologies](#skills--technologies)
-3. [Featured Projects](#featured-projects)
-4. [Education & Certifications](#education--certifications)
-5. [Contact Information](#contact-information)
+3. [Contact Information](#contact-information)
 
 ## About Me
 
