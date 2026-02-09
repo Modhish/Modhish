@@ -13,8 +13,8 @@ I am a **Backend Developer** with a Junior foundation in server-side programming
 
 - **Location**: [Russia,Volgograd]
 - **Experience**: [4] years of experience in backend development
-- **Languages**: [Java,Python, C , C++]
-- **Frameworks & Tools**: [Bootstrap , Django, Flask, Spring Boot, etc.]
+- **Languages**: [Java,Python, C , C++ , Dart ]
+- **Frameworks & Tools**: [Bootstrap , Django, Flask, Spring Boot, Flutter ]
 
 ### My Values:
 - **Efficiency**: Writing clean and maintainable code.
@@ -64,6 +64,3 @@ Feel free to reach out to me for collaboration or inquiries:
 
 - **Email**: [ahmedmodhish885@gmail.com]
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
