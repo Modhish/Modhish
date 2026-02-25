@@ -1,66 +1,45 @@
-Welcome to my **Portfolio**! My Name Is Ahmed I am a passionate and results-driven backend developer with a strong focus on creating high-performance, scalable, and secure backend systems. With a comprehensive understanding of data management, server-side programming, API development, and cloud technologies, I thrive on building efficient solutions that power modern web applications.
+# Hi, I'm Ahmed 👋
 
-This repository showcases the projects and skills I've developed . You will find various backend applications, microservices, API integrations, and cloud-based solutions, all created with the latest technologies and best practices in software development.
+I'm a passionate **Frontend Developer** focused on building clean, responsive, and user-friendly web and mobile applications. I enjoy turning ideas into polished digital experiences using modern technologies and best practices.
 
-## Table of Contents
-1. [About Me](#about-me)
-2. [Skills & Technologies](#skills--technologies)
-3. [Contact Information](#contact-information)
+---
 
-## About Me
+## 🚀 About Me
 
-I am a **Backend Developer** with a Junior foundation in server-side programming, databases, and cloud computing. I have a passion for optimizing processes and solving problems that improve business operations. I specialize in building and maintaining scalable, secure, and efficient backend systems and APIs that integrate seamlessly with frontend applications.
+- 📍 Based in **Volgograd, Russia**
+- 💼 **4 years** of experience in software development
+- 🎯 Focused on frontend development, UI architecture, and cross-platform mobile apps
+- 📬 Reach me at **ahmedmodhish885@gmail.com**
 
-- **Location**: [Russia,Volgograd]
-- **Experience**: [4] years of experience in backend development
-- **Languages**: [Java,Python, C , C++ , Dart ]
-- **Frameworks & Tools**: [Bootstrap , Django, Flask, Spring Boot, Flutter ]
+---
 
-### My Values:
-- **Efficiency**: Writing clean and maintainable code.
-- **Collaboration**: Working effectively in a team environment.
-- **Scalability**: Developing solutions that can handle growth.
+## 🛠️ Skills & Technologies
 
-## Skills & Technologies
+**Languages & Markup**
+`JavaScript` `Python` `Dart` `HTML` `CSS`
 
-As a Backend Developer, I am skilled in the following technologies and methodologies:
+**Frameworks & Libraries**
+`React` `Vue.js` `Flutter` `Bootstrap`
 
-### Programming Languages:
-- **Python**
-- **Java**
-- **C++**
-- **C**
+**Backend & APIs** *(familiar with)*
+`Django` `Flask` `FastAPI` `Spring Boot` `REST` `GraphQL` `JWT / OAuth`
 
-### Frameworks & Libraries:
-- **Django / Flask** (Python)
-- **Spring Boot** (Java)
-- **FastAPI** (Python)
+**Databases**
+`PostgreSQL` `MySQL` `MongoDB` `SQLite`
 
-### Databases:
-- **Relational Databases**: PostgreSQL, MySQL, SQLite
-- **NoSQL Databases**: MongoDB
+**DevOps & Tools**
+`Docker` `Git` `GitHub Actions` `CI/CD`
 
-### Cloud & DevOps:
-- **Docker** and **Kubernetes**
-- **CI/CD** (GitHub Actions, GitLab CI)
-- **Terraform** for Infrastructure as Code
+---
 
-### API Development:
-- RESTful API Design & Development
-- GraphQL
-- Authentication & Authorization (OAuth, JWT)
+## 📂 What You'll Find Here
 
-### Testing:
-- **Unit Testing** (JUnit)
-- **Integration Testing** (Postman)
+This repository showcases a variety of projects including web applications, mobile apps built with Flutter, API integrations, and UI components — all built with a focus on performance, scalability, and clean code.
 
-### Other Tools:
-- **Git** for version control
-- **PostgreSQL**, **MongoDB**, **Redis** for data management
+---
 
-## Contact Information
+## 📫 Contact
 
-Feel free to reach out to me for collaboration or inquiries:
+Have a project in mind or want to collaborate? Let's talk!
 
-- **Email**: [ahmedmodhish885@gmail.com]
-
+**Email**: ahmedmodhish885@gmail.com
