@@ -1,6 +1,7 @@
-# Hi, I'm Ahmed 👋
+# Hi, I'm Ahmed 👋  
+**Frontend Developer | React • Vue • Flutter | Building clean, fast, user-first apps**
 
-I'm a passionate **Frontend Developer** focused on building clean, responsive, and user-friendly web and mobile applications. I enjoy turning ideas into polished digital experiences using modern technologies and best practices.
+I turn ideas into polished web and mobile experiences with a focus on performance, accessibility, and maintainable architecture.
 
 ---
 
@@ -8,38 +9,47 @@ I'm a passionate **Frontend Developer** focused on building clean, responsive, a
 
 - 📍 Based in **Volgograd, Russia**
 - 💼 **4 years** of experience in software development
-- 🎯 Focused on frontend development, UI architecture, and cross-platform mobile apps
+- 🎯 Focused on **frontend engineering**, **UI architecture**, and **cross-platform mobile apps**
 - 📬 Reach me at **ahmedmodhish885@gmail.com**
+
+I enjoy solving complex UI problems, designing scalable component systems, and shipping products that feel smooth on any device.
 
 ---
 
 ## 🛠️ Skills & Technologies
 
-**Languages & Markup**
-`JavaScript` `Python` `Dart` `HTML` `CSS`
+**Languages & Markup**  
+`JavaScript` `TypeScript` `Python` `Dart` `HTML` `CSS`
 
-**Frameworks & Libraries**
-`React` `Vue.js` `Flutter` `Bootstrap`
+**Frontend Frameworks & Libraries**  
+`React` `Vue.js` `Flutter` `Bootstrap` `Tailwind CSS` *(if you use it)*
 
-**Backend & APIs** *(familiar with)*
+**Backend & APIs** *(familiar with)*  
 `Django` `Flask` `FastAPI` `Spring Boot` `REST` `GraphQL` `JWT / OAuth`
 
-**Databases**
+**Databases**  
 `PostgreSQL` `MySQL` `MongoDB` `SQLite`
 
-**DevOps & Tools**
-`Docker` `Git` `GitHub Actions` `CI/CD`
+**DevOps & Tools**  
+`Docker` `Git` `GitHub Actions` `CI/CD` `Vite` `Webpack` *(if applicable)*
 
 ---
 
-## 📂 What You'll Find Here
+## 📂 Featured Projects
 
-This repository showcases a variety of projects including web applications, mobile apps built with Flutter, API integrations, and UI components — all built with a focus on performance, scalability, and clean code.
+- **[Project Name]** – [1-line description + tech stack]. [Live Demo] • [Repo]  
+- **[Project Name]** – [1-line description + tech stack]. [Live Demo] • [Repo]  
+- **[Project Name]** – [1-line description + tech stack]. [Live Demo] • [Repo]  
+
+*(Tip: pick projects that show variety: a complex React app, a Flutter mobile app, and something with API integration.)*
 
 ---
 
 ## 📫 Contact
 
-Have a project in mind or want to collaborate? Let's talk!
+Have a project in mind or want to collaborate? Let’s talk!
 
-**Email**: ahmedmodhish885@gmail.com
+- **Email**: [ahmedmodhish885@gmail.com](mailto:ahmedmodhish885@gmail.com)  
+- **GitHub**: [github.com/your-username](https://github.com/your-username)  
+- **LinkedIn**: [linkedin.com/in/your-username](https://linkedin.com/in/your-username)  
+- **Portfolio**: [your-portfolio-url](https://your-portfolio-url)
