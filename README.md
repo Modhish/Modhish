@@ -1,4 +1,5 @@
-<h1 align="center">أهلاً · Привет, I'm Ahmed 👋<br/><sub><sup><code>ahmed@modhish</code> · full-stack developer · 🇪🇬 from Cairo, Egypt · living in Volgograd, Russia 🇷🇺</sup></sub></h1>
+<h1 align="center">Hi, I'm Ahmed 👋</h1>
+<p align="center"><bdi dir="rtl">أهلاً</bdi> · Привет · Hello<br/><sub><code>ahmed@modhish</code> · full-stack developer · from <b>Cairo, Egypt</b> · living in <b>Volgograd, Russia</b> for now</sub></p>
 
 <p align="center">
   <a href="https://t.me/Modhish1"><img src="https://img.shields.io/badge/Telegram-@Modhish1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
