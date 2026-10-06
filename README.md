@@ -1,190 +1,67 @@
-<div align="center">
+<h1 align="center">Привет, I'm Ahmed 👋<br/><sub><sup><code>ahmed@modhish</code> · full-stack developer · Volgograd, Russia</sup></sub></h1>
 
-<sub>AHMED MODHISH / INTERFACES, WITH INTENT</sub>
-
-<h1>Complex underneath.<br>Effortless on the surface.</h1>
-
-<p>
-  <strong>Frontend Developer · UI Architect · Cross-platform Builder</strong>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/hero.svg" width="820" alt="I turn complexity into clear interfaces. I connect design decisions to working code. I build for the next iteration."/>
 </p>
 
-<img
-  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=1400&color=58A6FF&center=true&vCenter=true&width=650&height=60&lines=I+turn+complexity+into+clear+interfaces.;I+connect+design+decisions+to+working+code.;I+build+for+the+next+iteration."
-  alt="I turn complexity into clear interfaces. I connect design decisions to working code. I build for the next iteration."
-/>
-
-<p>
-  <sub>VOLGOGRAD, RUSSIA &nbsp; / &nbsp; 4+ YEARS BUILDING SOFTWARE</sub>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/sky.svg" width="820" alt="the live sky over Volgograd: sun, moon, stars and city lights follow the real time of day, with the Motherland Calls statue above the Volga, re-rendered hourly"/>
 </p>
 
-<a href="mailto:ahmedmodhish885@gmail.com">
-  <img
-    src="https://img.shields.io/badge/LET'S_TALK-58A6FF?style=for-the-badge"
-    alt="Email Ahmed"
-  />
-</a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/card.svg" width="820" alt="fastfetch-style card: my stack, live GitHub stats and languages"/>
+</p>
 
-<br><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/pet.svg" width="820" alt="Yozhik, my profile's hedgehog. He levels up with every apple, pet and game from visitors."/>
+  <br/>
+  <a href="https://github.com/Modhish/Modhish/issues/new?title=yozhik%3A+feed+an+apple&body=Just+press+%22Create%22+%E2%80%94+a+bot+will+feed+Yozhik+and+close+this+issue+%F0%9F%8D%8E"><img src="https://raw.githubusercontent.com/Modhish/Modhish/output/btn-apple.svg" width="260" alt="feed Yozhik an apple"/></a>
+  <a href="https://github.com/Modhish/Modhish/issues/new?title=yozhik%3A+pet&body=Just+press+%22Create%22+%E2%80%94+a+bot+will+pet+Yozhik+and+close+this+issue+%F0%9F%A4%B2"><img src="https://raw.githubusercontent.com/Modhish/Modhish/output/btn-pet.svg" width="260" alt="pet Yozhik"/></a>
+  <a href="https://github.com/Modhish/Modhish/issues/new?title=yozhik%3A+play+catch&body=Just+press+%22Create%22+%E2%80%94+a+bot+will+play+with+Yozhik+and+close+this+issue+%F0%9F%8E%BE"><img src="https://raw.githubusercontent.com/Modhish/Modhish/output/btn-play.svg" width="260" alt="play catch with Yozhik"/></a>
+</p>
 
-<table>
-  <tr>
-    <td align="center">
-      <code>ʕ•ᴥ•ʔ &nbsp; (=^･ω･^=) &nbsp; (•̀ᴗ•́)و</code>
-      <br>
-      <code>└─┐ &nbsp;&nbsp;&nbsp; ┌─┴─┐ &nbsp;&nbsp;&nbsp; ┌─┘</code>
-      <br>
-      <img
-        src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=PROFILE+VIEWS&color=1f6feb&style=for-the-badge"
-        alt="Profile views, including repeat visits"
-      />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/activity.svg" width="820" alt="my latest public GitHub activity, as a git log"/>
+</p>
 
-<sub>Three tiny caretakers. One counting job.</sub>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Modhish/Modhish/output/snake-dark.svg"/>
+    <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/snake.svg" width="820" alt="a snake eating my contribution graph"/>
+  </picture>
+</p>
 
-<br><br>
+<details>
+  <summary><b>more about me</b></summary>
+  <br/>
 
-<code>STRUCTURE</code>
-&nbsp; → &nbsp;
-<code>INTERACTION</code>
-&nbsp; → &nbsp;
-<code>REFINEMENT</code>
+I'm a **full-stack developer** who cares about both sides of the screen: the interface people touch, and the APIs, data and infrastructure underneath it. **Complex underneath. Effortless on the surface.**
 
-</div>
-
----
-
-### 01 / Behind the interface
-
-I'm **Ahmed**, a developer working at the intersection of frontend
-architecture, interface design, and cross-platform development.
-
-I enjoy making complicated products feel straightforward:
-organizing complex state, shaping reusable components, and turning
-design ideas into responsive web and mobile experiences.
-
-**I care about what people see—and the engineering that makes it work.**
-
-<br>
-
-### 02 / Where I make a difference
-
-| Area | What I focus on |
+| Layer | What I work with |
 | :--- | :--- |
-| **Frontend architecture** | Clear component boundaries and predictable state as applications grow. |
-| **Interface development** | Responsive layouts, consistent interactions, and careful visual implementation. |
-| **Design systems** | Reusable patterns that bring consistency to a product. |
-| **Cross-platform apps** | Web and mobile experiences built with React, Vue.js, and Flutter. |
-| **Performance & accessibility** | Fast, understandable interfaces that more people can use. |
+| **Frontend** | TypeScript · React · Vue.js · Flutter / Dart · Tailwind CSS |
+| **Backend & APIs** | Python · FastAPI · Django · Flask · Java · Spring Boot · REST · GraphQL |
+| **Data & ML** | PostgreSQL · MySQL · MongoDB · SQLite · ML models with SHAP + LLM analysis |
+| **Delivery** | Git · Docker · GitHub Actions · CI/CD · Vite · Webpack |
 
-<br>
-
-### 03 / My toolkit
-
-**The everyday stack**
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=ts,js,react,vue,flutter,dart&theme=dark"
-    alt="TypeScript, JavaScript, React, Vue.js, Flutter, and Dart"
-  />
-</p>
-
-**The supporting cast**
-
-| Layer | Technologies |
-| :--- | :--- |
-| **Markup & styling** | HTML · CSS · Tailwind CSS · Bootstrap |
-| **Backend & APIs** | Python · FastAPI · Django · Flask · Spring Boot · REST · GraphQL |
-| **Databases** | PostgreSQL · MySQL · MongoDB · SQLite |
-| **Build & delivery** | Git · Docker · GitHub Actions · CI/CD · Vite · Webpack |
-
-<br>
-
-### 04 / How I think about an interface
+**How I think about building a product**
 
 ```text
-A user arrives
-      │
-      ▼
-Can they understand it?
-      │
-      ▼
-Can they use it?
-      │
-      ▼
-Does it respond clearly?
-      │
-      ▼
-What happens when something goes wrong?
-      │
-      ▼
-Now refine the details.
+A user arrives → Can they understand it? → Can they use it?
+→ Does it respond clearly? → What happens when something goes wrong?
+→ Is the backend fast, consistent and observable? → Now refine the details.
 ```
 
-The first render is only part of the experience.
+Loading, empty, error and success states deserve the same attention as the main screen, and so do the API contracts, the database and the deploy pipeline behind them.
 
-Loading, empty, error, and success states deserve the same attention
-as the main screen. So do keyboard navigation, small displays,
-and the moments when the connection gets slow.
+**Currently sharpening:** scalable architecture end to end · design-system boundaries · shared logic across web and mobile · performance from the query to the pixel.
 
-<br>
+📫 Have a product, an API or a mobile app that needs building? → **[ahmedmodhish885@gmail.com](mailto:ahmedmodhish885@gmail.com)**
 
-### 05 / Code you can explore
+</details>
 
-**My pinned repositories below are the best place to start.**
-
-I'm particularly interested in projects that connect a thoughtful
-interface with a well-structured implementation.
-
-<!--
-When ready, replace the text above with 2–3 real projects.
-
-Example:
-
-#### [Project name ↗](https://github.com/YOUR_GITHUB_USERNAME/REPOSITORY)
-
-A short explanation of the product and who it helps.
-
-- Challenge: A specific problem you needed to solve.
-- Contribution: What you personally designed or implemented.
-- Stack: React · TypeScript · FastAPI
-
-Avoid invented results. Concrete technical decisions make stronger
-project descriptions than generic claims.
--->
-
-<br>
-
-### 06 / Currently sharpening
-
-- **Frontend architecture** — keeping growing applications understandable.
-- **Design systems** — finding the right boundaries for reuse.
-- **Cross-platform development** — connecting shared logic with platform needs.
-- **UI performance** — making complex interactions feel responsive.
-
-<br>
-
----
-
-<div align="center">
-
-<sub>GOOD PRODUCTS START WITH A REAL PROBLEM</sub>
-
-<h3>Let's build something worth using.</h3>
-
-<p>
-  Have a frontend challenge, a mobile app idea,<br>
-  or a design system that needs to take shape?
-</p>
-
-<a href="mailto:ahmedmodhish885@gmail.com">
-  <strong>ahmedmodhish885@gmail.com ↗</strong>
-</a>
-
-<br><br>
-
-<code>Made with intent. Improved through iteration.</code>
-
-</div>
+<details>
+  <summary><sub>· · ·</sub></summary>
+  <p align="center"><sub>you found the fine print!! there's no server here: everything above is rendered by <a href="scripts">a few hundred lines of Node</a> running on GitHub Actions every hour. the buttons open an issue, a bot feeds Yozhik and closes it. go give him an apple → <a href="https://github.com/Modhish/Modhish/issues/new?title=yozhik%3A+feed+an+apple&body=Just+press+%22Create%22+%F0%9F%8D%8E">🍎</a></sub></p>
+  <p align="center"><sub>inspired by <a href="https://github.com/aw-snap">@aw-snap</a>'s live README · <img src="https://komarev.com/ghpvc/?username=Modhish&label=visitors&color=58a6ff&style=flat-square" alt="profile views" align="center"/></sub></p>
+</details>

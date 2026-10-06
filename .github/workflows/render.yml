@@ -1,0 +1,85 @@
+name: render profile
+
+on:
+  schedule:
+    - cron: '7 * * * *' # hourly, so the sky over Volgograd stays current
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'data/**', '.github/workflows/render.yml']
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    # Only issues created by the Yozhik buttons (title starts with "yozhik:").
+    if: github.event_name != 'issues' || startsWith(github.event.issue.title, 'yozhik:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply visitor interaction
+        id: pet
+        if: github.event_name == 'issues'
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: node scripts/interact.mjs
+
+      - name: Save pet state
+        if: steps.pet.outputs.changed == 'true'
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/pet.json
+          git commit -m "🦔 visitor interaction (#${ISSUE_NUMBER})"
+          git pull --rebase
+          git push
+
+      - name: Render panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/render.mjs
+
+      - name: Render contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+          commit_message: render panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Thank the visitor and close the issue
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        env:
+          REPLY: ${{ steps.pet.outputs.reply }}
+        with:
+          script: |
+            const issue_number = context.payload.issue.number;
+            await github.rest.issues.createComment({ ...context.repo, issue_number, body: process.env.REPLY || '🦔' });
+            await github.rest.issues.update({ ...context.repo, issue_number, state: 'closed', state_reason: 'completed' });
