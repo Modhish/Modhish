@@ -6,6 +6,7 @@ import { renderCard } from './panels/card.mjs';
 import { renderPet, renderButton } from './panels/pet.mjs';
 import { renderActivity } from './panels/activity.mjs';
 import { renderHero } from './panels/hero.mjs';
+import { renderJourney } from './panels/journey.mjs';
 
 const now = process.env.RENDER_AT ? new Date(process.env.RENDER_AT) : new Date();
 const out = new URL('../dist/', import.meta.url);
@@ -16,6 +17,7 @@ const pet = JSON.parse(await readFile(new URL('../data/pet.json', import.meta.ur
 
 const files = {
   'hero.svg': renderHero(),
+  'journey.svg': renderJourney(now),
   'sky.svg': renderSky(now),
   'card.svg': renderCard(gh, now),
   'pet.svg': renderPet(pet, now),

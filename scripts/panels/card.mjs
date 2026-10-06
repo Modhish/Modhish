@@ -27,7 +27,8 @@ export function renderCard(gh, now = new Date()) {
   const W = 820;
   const rows = [
     ['OS', 'Full-Stack Developer · UI Architect'],
-    ['Host', `${gh.company} · ${CITY.name}, RU`],
+    ['Origin', 'Cairo, Egypt  →  living in Volgograd, Russia'],
+    ['Host', `${gh.company}`],
     ['Uptime', `${uptime(gh.createdAt, now)} on GitHub`],
     ['Packages', `${n(gh.repos)} repos · ★ ${n(gh.stars)} stars`],
     ['Languages', 'Java · Dart · TypeScript · JavaScript · Python'],

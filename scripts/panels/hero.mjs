@@ -2,6 +2,7 @@
 import { C, FONT, esc } from '../lib.mjs';
 
 const LINES = [
+  'Born in Cairo, building in Volgograd.',
   'I turn complexity into clear interfaces.',
   'I connect design decisions to working code.',
   'I build for the next iteration.',

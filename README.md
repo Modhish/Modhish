@@ -1,4 +1,4 @@
-<h1 align="center">Привет, I'm Ahmed 👋<br/><sub><sup><code>ahmed@modhish</code> · full-stack developer · Volgograd, Russia</sup></sub></h1>
+<h1 align="center">أهلاً · Привет, I'm Ahmed 👋<br/><sub><sup><code>ahmed@modhish</code> · full-stack developer · 🇪🇬 from Cairo, Egypt · living in Volgograd, Russia 🇷🇺</sup></sub></h1>
 
 <p align="center">
   <a href="https://t.me/Modhish1"><img src="https://img.shields.io/badge/Telegram-@Modhish1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
@@ -9,6 +9,10 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/hero.svg" width="820" alt="I turn complexity into clear interfaces. I connect design decisions to working code. I build for the next iteration."/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/journey.svg" width="820" alt="from Cairo, Egypt (where I was born and raised) to Volgograd, Russia (where I live for now): a plane flies from the pyramids and the Nile to the Motherland Calls statue and the Volga, with live clocks for both cities"/>
 </p>
 
 <p align="center">
@@ -48,7 +52,7 @@
   <summary><b>more about me (click to expand)</b></summary>
   <br/>
 
-I'm a **full-stack developer** who cares about both sides of the screen: the interface people touch, and the APIs, data and infrastructure underneath it. **Complex underneath. Effortless on the surface.**
+I'm an Egyptian **full-stack developer** from Cairo, living in Volgograd, Russia for now, who cares about both sides of the screen: the interface people touch, and the APIs, data and infrastructure underneath it. **Complex underneath. Effortless on the surface.**
 
 | Layer | What I work with |
 | :--- | :--- |
