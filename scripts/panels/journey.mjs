@@ -48,7 +48,7 @@ export function renderJourney(now = new Date()) {
   let snow = '';
   for (let i = 0; i < 26; i++) {
     const x = 540 + ((i * 97) % 270);
-    snow += `<circle cx="${x}" cy="0" r="${1.4 + (i % 3) * 0.7}" fill="#fff" class="snow" style="animation-duration:${6 + (i % 5)}s;animation-delay:-${(i * 0.73) % 9}s"/>`;
+    snow += `<circle cx="${x}" cy="0" r="${1.4 + (i % 3) * 0.7}" fill="#fff" class="snow" style="animation-duration:${12 + (i % 5) * 2}s;animation-delay:-${(i * 1.4) % 18}s"/>`;
   }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
@@ -66,25 +66,25 @@ export function renderJourney(now = new Date()) {
   </defs>
   <style>
     .t { font-family: ${FONT}; }
-    .rays { transform-origin: 96px 92px; animation: spin 30s linear infinite; }
+    .rays { transform-origin: 96px 92px; animation: spin 60s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .palm { transform-box: fill-box; transform-origin: center bottom; animation: palm 4s ease-in-out infinite alternate; }
+    .palm { transform-box: fill-box; transform-origin: center bottom; animation: palm 7s ease-in-out infinite alternate; }
     @keyframes palm { from { transform: rotate(-3deg); } to { transform: rotate(3deg); } }
-    .river { animation: river 3s linear infinite; }
+    .river { animation: river 7s linear infinite; }
     @keyframes river { to { transform: translateX(-40px); } }
-    .snow { animation: snow 8s linear infinite; }
+    .snow { animation: snow 16s linear infinite; }
     @keyframes snow { from { transform: translate(0,-10px); } to { transform: translate(16px,${G + 10}px); } }
-    .route { stroke-dasharray: 2 9; animation: dash 1.2s linear infinite; }
+    .route { stroke-dasharray: 2 9; animation: dash 2.8s linear infinite; }
     @keyframes dash { to { stroke-dashoffset: -11; } }
-    .ping { transform-box: fill-box; transform-origin: center; animation: ping 2s ease-out infinite; }
+    .ping { transform-box: fill-box; transform-origin: center; animation: ping 3.6s ease-out infinite; }
     @keyframes ping { from { transform: scale(.4); opacity: .9; } to { transform: scale(2.6); opacity: 0; } }
-    .in { opacity: 0; animation: in .8s ease-out forwards; }
+    .in { opacity: 0; animation: in 1.6s ease-out forwards; }
     @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-    .shine { animation: shine 3.5s ease-in-out infinite; }
+    .shine { animation: shine 7s ease-in-out infinite; }
     @keyframes shine { 0%,100% { opacity: .0; } 50% { opacity: .35; } }
-    .bird { animation: bird 14s linear infinite; }
+    .bird { animation: bird 28s linear infinite; }
     @keyframes bird { from { transform: translate(-40px,0); } to { transform: translate(300px,-30px); } }
-    .flap { animation: flap .5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+    .flap { animation: flap .9s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
     @keyframes flap { to { transform: scaleY(-.6); } }
   </style>
   <g clip-path="url(#jframe)">
@@ -138,9 +138,9 @@ export function renderJourney(now = new Date()) {
     <!-- the route -->
     <path d="${route}" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" class="route" opacity=".9"/>
     <circle cx="178" cy="128" r="6" fill="#ce1126" stroke="#fff" stroke-width="2"/><circle cx="178" cy="128" r="6" fill="none" stroke="#fff" stroke-width="2" class="ping"/>
-    <circle cx="630" cy="158" r="6" fill="#0039a6" stroke="#fff" stroke-width="2"/><circle cx="630" cy="158" r="6" fill="none" stroke="#fff" stroke-width="2" class="ping" style="animation-delay:-1s"/>
+    <circle cx="630" cy="158" r="6" fill="#0039a6" stroke="#fff" stroke-width="2"/><circle cx="630" cy="158" r="6" fill="none" stroke="#fff" stroke-width="2" class="ping" style="animation-delay:-1.8s"/>
     <g>
-      <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;0.8;1" calcMode="linear" path="${route}"/>
+      <animateMotion dur="16s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;0.8;1" calcMode="linear" path="${route}"/>
       <path d="M-11,0 L-4,-2 L2,-10 L5,-10 L2,-2 L9,-2 L12,-5 L14,-5 L12,0 L14,5 L12,5 L9,2 L2,2 L5,10 L2,10 L-4,2 L-11,0 Z" fill="#ffffff" transform="scale(1.3)"/>
     </g>
     <g class="t in" style="animation-delay:.6s">
