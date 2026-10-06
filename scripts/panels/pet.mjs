@@ -117,7 +117,7 @@ export function renderPet(state, now = new Date()) {
   return frame({
     w: W,
     h: H,
-    title: 'yozhik.exe — click the buttons below to interact',
+    title: 'yozhik.exe — tap a button below, then press “Create” on GitHub',
     defs: `<linearGradient id="xp" x1="0" x2="1"><stop offset="0" stop-color="${C.yellow}"/><stop offset="1" stop-color="${C.orange}"/></linearGradient>`,
     style: `
       .breathe { transform-origin: 72px 99px; animation: breathe 3.2s ease-in-out infinite; }

@@ -14,8 +14,10 @@ permissions:
   contents: write
   issues: write
 
+# Each visitor click gets its own group so none are ever dropped; GitHub only
+# keeps one pending run per group. Clicks that race are reconciled on push.
 concurrency:
-  group: profile-render
+  group: profile-render-${{ github.event.issue.number || 'scheduled' }}
   cancel-in-progress: false
 
 jobs:
@@ -30,25 +32,29 @@ jobs:
         with:
           node-version: 22
 
-      - name: Apply visitor interaction
+      - name: Apply visitor interaction and save it
         id: pet
         if: github.event_name == 'issues'
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
-        run: node scripts/interact.mjs
-
-      - name: Save pet state
-        if: steps.pet.outputs.changed == 'true'
-        env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/pet.json
-          git commit -m "🦔 visitor interaction (#${ISSUE_NUMBER})"
-          git pull --rebase
-          git push
+          # Another click may land first; start over from the latest state and retry.
+          for attempt in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            node scripts/interact.mjs
+            git diff --quiet data/pet.json && exit 0
+            git commit -qam "🦔 visitor interaction (#${ISSUE_NUMBER})"
+            git push -q origin HEAD:main && exit 0
+            sleep $((attempt * 2))
+          done
+          exit 1
+
+      - name: Use the newest pet state
+        run: git fetch -q origin main && git reset -q --hard origin/main
 
       - name: Render panels
         env:

@@ -4,7 +4,8 @@
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
 import { XP, VERB, level } from './panels/pet.mjs';
 
-const COOLDOWN_MIN = 5;
+// Only repeats of the *same* action by the same visitor are throttled.
+const COOLDOWN_SEC = 60;
 const file = new URL('../data/pet.json', import.meta.url);
 
 const title = (process.env.ISSUE_TITLE || '').toLowerCase();
@@ -25,9 +26,9 @@ if (!action) {
 
 const state = JSON.parse(await readFile(file, 'utf8'));
 const now = new Date();
-const lastByUser = state.history.find((h) => h.login === login);
-if (lastByUser && now - new Date(lastByUser.at) < COOLDOWN_MIN * 60e3) {
-  await reply(`Yozhik is still busy with your last visit, @${login} — come back in a few minutes 🦔`, false);
+const lastSame = state.history.find((h) => h.login === login && h.action === action);
+if (lastSame && now - new Date(lastSame.at) < COOLDOWN_SEC * 1e3) {
+  await reply(`Yozhik is still munching on that, @${login} — try a different button, or the same one again in a minute 🦔`, false);
   process.exit(0);
 }
 
@@ -44,6 +45,6 @@ const after = level(state.xp);
 const lines = [
   `@${login} ${VERB[action]} — thank you! 🦔`,
   after > before ? `\n🎉 **Yozhik levelled up to LV ${after}!**` : '',
-  `\nThe profile will refresh in a minute or two: https://github.com/Modhish`,
+  `\nHe'll show it on the profile in 1–5 minutes (GitHub caches images briefly): https://github.com/Modhish`,
 ];
 await reply(lines.join(''), true);

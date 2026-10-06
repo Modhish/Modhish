@@ -28,16 +28,24 @@ export function renderCard(gh, now = new Date()) {
   const rows = [
     ['OS', 'Full-Stack Developer · UI Architect'],
     ['Host', `${gh.company} · ${CITY.name}, RU`],
-    ['Kernel', 'TypeScript · Python · Dart · Java'],
     ['Uptime', `${uptime(gh.createdAt, now)} on GitHub`],
     ['Packages', `${n(gh.repos)} repos · ★ ${n(gh.stars)} stars`],
-    ['Frontend', 'React · Vue · Flutter'],
-    ['Backend', 'FastAPI · Django · Spring Boot · REST · GraphQL'],
-    ['Data', 'PostgreSQL · MySQL · MongoDB · ML & LLM pipelines'],
-    ['DevOps', 'Docker · GitHub Actions · CI/CD'],
+    ['Languages', 'Java · Dart · TypeScript · JavaScript · Python'],
+    ['', 'C · C++ · PHP · SQL · HTML/CSS · Lex/Yacc'],
+    ['Mobile', 'Flutter (iOS·Android·Web·Desktop) · GetX · Isar'],
+    ['Frontend', 'React · Vue · Tailwind · Widgetbook · PWA'],
+    ['Backend', 'Spring Boot · Spring Cloud · OpenFeign · Kafka'],
+    ['', 'FastAPI · Django · Flask · Retrofit'],
+    ['Arch', 'Microservices · Hexagonal · REST · GraphQL · JWT'],
+    ['Data', 'MongoDB · PostgreSQL · MySQL · SQLite'],
+    ['DevOps', 'Docker · Compose · Jenkins · Nginx · Actions · Maven'],
+    ['Testing', 'JUnit · Mockito · WireMock · Bruno · flutter_test'],
+    ['AI', 'MCP servers · LLM pipelines · SHAP · AI agents'],
     ['Commits', `${n(gh.contributions)} contributions in the last year`],
     ['Network', `${n(gh.followers)} followers · ${n(gh.following)} following`],
-    ['Status', 'open to full-stack, mobile & design-system work'],
+    ['Links', 't.me/Modhish1 · ahmedmodhish.netlify.app'],
+    ['', 'linkedin.com/in/ahmed-modhish-227a1a178'],
+    ['Status', 'open to full-stack, mobile & backend work'],
   ];
 
   const x0 = 260;
@@ -49,21 +57,23 @@ export function renderCard(gh, now = new Date()) {
 
   // Logo with a vertical gradient.
   const p = 13;
+  const logoY = top + (lh * (rows.length + 2)) / 2 - 50;
   body += `<g fill="url(#logo)">`;
   LOGO.forEach((row, y) =>
     [...row].forEach((ch, x) => {
-      if (ch === '#') body += `<rect x="${44 + x * p}" y="${top + 30 + y * p}" width="${p - 2}" height="${p - 2}" rx="2"/>`;
+      if (ch === '#') body += `<rect x="${44 + x * p}" y="${logoY + y * p}" width="${p - 2}" height="${p - 2}" rx="2"/>`;
     }),
   );
   body += `</g>
-    <text x="${44 + (LOGO[0].length * p) / 2}" y="${top + 30 + LOGO.length * p + 34}" text-anchor="middle" class="t" font-size="12" letter-spacing="2" fill="${C.muted}">&lt;/&gt; full-stack</text>`;
+    <text x="${44 + (LOGO[0].length * p) / 2}" y="${logoY + LOGO.length * p + 34}" text-anchor="middle" class="t" font-size="12" letter-spacing="2" fill="${C.muted}">&lt;/&gt; full-stack</text>`;
 
   body += `<g class="t" font-size="13.5">
     <text x="${x0}" y="${top}"><tspan fill="${C.blue}" font-weight="700">ahmed</tspan><tspan fill="${C.text}">@</tspan><tspan fill="${C.blue}" font-weight="700">modhish</tspan></text>
     <text x="${x0}" y="${top + lh}" fill="${C.muted}">${'─'.repeat(user.length)}</text>`;
   rows.forEach(([k, v], i) => {
     const y = top + lh * (i + 2);
-    body += `<text x="${x0}" y="${y}" class="row" style="animation-delay:${(0.08 * i).toFixed(2)}s"><tspan fill="${C.blue}" font-weight="700">${esc(k)}</tspan><tspan fill="${C.text}">: ${esc(v)}</tspan></text>`;
+    // Values sit in an aligned column; a row with no key continues the one above.
+    body += `<text x="${x0}" y="${y}" class="row" style="animation-delay:${(0.05 * i).toFixed(2)}s"><tspan fill="${C.blue}" font-weight="700">${k ? esc(k) + ':' : ''}</tspan><tspan x="${x0 + 92}" fill="${C.text}">${esc(v)}</tspan></text>`;
   });
   body += `</g>`;
 
@@ -101,7 +111,7 @@ export function renderCard(gh, now = new Date()) {
     w: W,
     h: H,
     title: 'ahmed@volgograd: ~ — fastfetch',
-    defs: `<linearGradient id="logo" gradientUnits="userSpaceOnUse" x1="0" y1="${top + 30}" x2="0" y2="${top + 30 + LOGO.length * 13}"><stop offset="0" stop-color="${C.cyan}"/><stop offset="0.55" stop-color="${C.blue}"/><stop offset="1" stop-color="${C.purple}"/></linearGradient>`,
+    defs: `<linearGradient id="logo" gradientUnits="userSpaceOnUse" x1="0" y1="${logoY}" x2="0" y2="${logoY + LOGO.length * 13}"><stop offset="0" stop-color="${C.cyan}"/><stop offset="0.55" stop-color="${C.blue}"/><stop offset="1" stop-color="${C.purple}"/></linearGradient>`,
     style: `.row { opacity: 0; animation: in .4s ease-out forwards; }
     @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
     .cur { animation: cur 1s steps(1) infinite; } @keyframes cur { 50% { opacity: 0; } }`,

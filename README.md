@@ -1,6 +1,13 @@
 <h1 align="center">Привет, I'm Ahmed 👋<br/><sub><sup><code>ahmed@modhish</code> · full-stack developer · Volgograd, Russia</sup></sub></h1>
 
 <p align="center">
+  <a href="https://t.me/Modhish1"><img src="https://img.shields.io/badge/Telegram-@Modhish1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
+  <a href="https://www.linkedin.com/in/ahmed-modhish-227a1a178/"><img src="https://img.shields.io/badge/LinkedIn-Ahmed_Modhish-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://ahmedmodhish.netlify.app"><img src="https://img.shields.io/badge/Website-ahmedmodhish.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Website"/></a>
+  <a href="mailto:ahmedmodhish885@gmail.com"><img src="https://img.shields.io/badge/Email-say_hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/hero.svg" width="820" alt="I turn complexity into clear interfaces. I connect design decisions to working code. I build for the next iteration."/>
 </p>
 
@@ -10,6 +17,12 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/card.svg" width="820" alt="fastfetch-style card: my stack, live GitHub stats and languages"/>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,kafka,maven,dart,flutter,ts,js,react,vue,tailwind,html,css,py,fastapi&perline=15" alt="Java, Spring, Kafka, Maven, Dart, Flutter, TypeScript, JavaScript, React, Vue, Tailwind, HTML, CSS, Python, FastAPI"/>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=django,flask,c,cpp,php,mongodb,postgres,mysql,sqlite,graphql,docker,jenkins,nginx,githubactions,git&perline=15" alt="Django, Flask, C, C++, PHP, MongoDB, PostgreSQL, MySQL, SQLite, GraphQL, Docker, Jenkins, Nginx, GitHub Actions, Git"/>
 </p>
 
 <p align="center">
@@ -32,17 +45,23 @@
 </p>
 
 <details>
-  <summary><b>more about me</b></summary>
+  <summary><b>more about me (click to expand)</b></summary>
   <br/>
 
 I'm a **full-stack developer** who cares about both sides of the screen: the interface people touch, and the APIs, data and infrastructure underneath it. **Complex underneath. Effortless on the surface.**
 
 | Layer | What I work with |
 | :--- | :--- |
-| **Frontend** | TypeScript · React · Vue.js · Flutter / Dart · Tailwind CSS |
-| **Backend & APIs** | Python · FastAPI · Django · Flask · Java · Spring Boot · REST · GraphQL |
-| **Data & ML** | PostgreSQL · MySQL · MongoDB · SQLite · ML models with SHAP + LLM analysis |
-| **Delivery** | Git · Docker · GitHub Actions · CI/CD · Vite · Webpack |
+| **Languages** | Java · Dart · TypeScript · JavaScript · Python · C · C++ · PHP · SQL · HTML/CSS · Lex/Yacc |
+| **Mobile** | Flutter for iOS, Android, Web & Desktop · go_router · Provider · GetX · Isar · build_runner codegen |
+| **Frontend** | React · Vue.js · Tailwind CSS · Widgetbook · PWAs · design systems & UI kits |
+| **Backend** | Spring Boot · Spring Cloud · OpenFeign · Kafka · Lombok · MapStruct · FastAPI · Django · Flask |
+| **Architecture** | Microservices · hexagonal multi-module services · shared SDKs · REST · GraphQL · OpenAPI · JWT auth |
+| **Data** | MongoDB · PostgreSQL · MySQL · SQLite · Isar |
+| **DevOps** | Docker · Docker Compose · Jenkins · Nginx · GitHub Actions · Maven · CI/CD |
+| **Testing & tools** | JUnit · Mockito · WireMock · flutter_test · Bruno · Git |
+| **AI** | MCP servers · LLM pipelines · ML with SHAP explanations · AI coding agents |
+| **Also built** | a Fortran 90/95 compiler (C, Lex/Yacc) · Telegram bots · Retrofit API clients |
 
 **How I think about building a product**
 
