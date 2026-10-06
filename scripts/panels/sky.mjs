@@ -9,13 +9,13 @@ const RAD = Math.PI / 180;
 
 // ---------- astronomy (low-precision, plenty for a picture) ----------
 
-function sky(date) {
+export function sky(date, place = CITY) {
   const d = date.getTime() / 86400000 - 10957.5; // days since J2000
   const g = (357.529 + 0.98560028 * d) * RAD;
   const q = 280.459 + 0.98564736 * d;
   const L = (q + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g)) * RAD;
   const e = (23.439 - 0.00000036 * d) * RAD;
-  const lst = ((((18.697374558 + 24.06570982441908 * d) % 24) + 24) % 24) * 15 + CITY.lon;
+  const lst = ((((18.697374558 + 24.06570982441908 * d) % 24) + 24) % 24) * 15 + place.lon;
 
   // Moon phase: days since a known new moon, as a 0..1 fraction of the cycle.
   const phase = ((((date.getTime() - Date.UTC(2000, 0, 6, 18, 14)) / 86400000) % 29.530588) + 29.530588) % 29.530588 / 29.530588;
@@ -25,14 +25,14 @@ function sky(date) {
     dec: Math.asin(Math.sin(e) * Math.sin(lambda)),
   });
 
-  const sun = altAz(onEcliptic(L), lst);
+  const sun = altAz(onEcliptic(L), lst, place.lat);
   // Treat the moon as riding the ecliptic, `phase` of a turn ahead of the sun.
-  const moon = altAz(onEcliptic(L + phase * 2 * Math.PI), lst);
+  const moon = altAz(onEcliptic(L + phase * 2 * Math.PI), lst, place.lat);
   return { sun, moon, phase };
 }
 
-function altAz({ ra, dec }, lstDeg) {
-  const lat = CITY.lat * RAD;
+function altAz({ ra, dec }, lstDeg, latDeg) {
+  const lat = latDeg * RAD;
   const h = lstDeg * RAD - ra;
   const alt = Math.asin(Math.sin(lat) * Math.sin(dec) + Math.cos(lat) * Math.cos(dec) * Math.cos(h));
   let az = Math.atan2(-Math.sin(h), Math.tan(dec) * Math.cos(lat) - Math.sin(lat) * Math.cos(h)) / RAD;
@@ -53,7 +53,7 @@ const KEYS = [
   [70, '#1f5fbf', '#8cc8ff'],
 ];
 
-function skyColors(alt) {
+export function skyColors(alt) {
   if (alt <= KEYS[0][0]) return [KEYS[0][1], KEYS[0][2]];
   for (let i = 1; i < KEYS.length; i++) {
     const [a1, t1, b1] = KEYS[i];
@@ -66,7 +66,7 @@ function skyColors(alt) {
   return [KEYS.at(-1)[1], KEYS.at(-1)[2]];
 }
 
-function mulberry32(seed) {
+export function mulberry32(seed) {
   return () => {
     seed |= 0; seed = (seed + 0x6d2b79f5) | 0;
     let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);

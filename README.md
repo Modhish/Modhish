@@ -13,11 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/journey.svg" width="820" alt="from Cairo, Egypt (where I was born and raised) to Volgograd, Russia (where I live for now): a plane flies from the pyramids and the Nile to the Motherland Calls statue and the Volga, with live clocks for both cities"/>
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/sky.svg" width="820" alt="the live sky over Volgograd: sun, moon, stars and city lights follow the real time of day, with the Motherland Calls statue above the Volga, re-rendered hourly"/>
+  <img src="https://raw.githubusercontent.com/Modhish/Modhish/output/journey.svg" width="820" alt="half Cairo, Egypt (where I was born and raised), half Volgograd, Russia (where I live now): each side shows that city's real sky right now, and a plane flies from the pyramids to the Motherland Calls statue"/>
 </p>
 
 <p align="center">

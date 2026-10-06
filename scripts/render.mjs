@@ -1,7 +1,6 @@
 // Renders every live panel into dist/. Run by .github/workflows/render.yml.
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { loadGithub } from './github.mjs';
-import { renderSky } from './panels/sky.mjs';
 import { renderCard } from './panels/card.mjs';
 import { renderPet, renderButton } from './panels/pet.mjs';
 import { renderActivity } from './panels/activity.mjs';
@@ -18,7 +17,6 @@ const pet = JSON.parse(await readFile(new URL('../data/pet.json', import.meta.ur
 const files = {
   'hero.svg': renderHero(),
   'journey.svg': renderJourney(now),
-  'sky.svg': renderSky(now),
   'card.svg': renderCard(gh, now),
   'pet.svg': renderPet(pet, now),
   'activity.svg': renderActivity(gh, now),
