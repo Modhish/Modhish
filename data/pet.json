@@ -1,19 +1,24 @@
 {
   "born": "2026-10-06T00:00:00Z",
-  "xp": 14,
-  "apples": 3,
+  "xp": 17,
+  "apples": 4,
   "pets": 1,
   "plays": 2,
-  "lastApple": "2026-10-06T11:52:59.553Z",
+  "lastApple": "2026-10-08T14:19:32.455Z",
   "last": {
     "login": "Modhish",
-    "action": "play",
-    "at": "2026-10-06T12:35:42.315Z"
+    "action": "apple",
+    "at": "2026-10-08T14:19:32.455Z"
   },
   "visitors": {
-    "Modhish": 6
+    "Modhish": 7
   },
   "history": [
+    {
+      "login": "Modhish",
+      "action": "apple",
+      "at": "2026-10-08T14:19:32.455Z"
+    },
     {
       "login": "Modhish",
       "action": "play",
