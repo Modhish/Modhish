@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330">
+  <defs><linearGradient id="xp" x1="0" x2="1"><stop offset="0" stop-color="#d29922"/><stop offset="1" stop-color="#f0883e"/></linearGradient>
+      <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1a2b"/><stop offset="1" stop-color="#14261c"/></linearGradient>
+    <clipPath id="card"><rect width="820" height="330" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .t { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',monospace; }
+    
+      .walk { animation: walk 16s ease-in-out infinite; }
+      @keyframes walk { 0%,6% { transform: translateX(0); } 42%,56% { transform: translateX(58px); } 92%,100% { transform: translateX(0); } }
+      .flip { transform-box: fill-box; transform-origin: center; animation: flip 16s steps(1) infinite; }
+      @keyframes flip { 0%,48% { transform: scaleX(1); } 49%,97% { transform: scaleX(-1); } 98%,100% { transform: scaleX(1); } }
+      .breathe { transform-box: fill-box; transform-origin: center bottom; animation: breathe 3s ease-in-out infinite; }
+      .breathe.slow { animation-duration: 5s; }
+      @keyframes breathe { 50% { transform: scale(1.025, 1.05); } }
+      .hop { animation: hop .8s ease-in-out infinite; }
+      @keyframes hop { 0%,100% { transform: translateY(0); } 40% { transform: translateY(-22px); } }
+      .stepping .legA { animation: step .32s steps(1) infinite; }
+      .stepping .legB { animation: step .32s steps(1) infinite; animation-delay: -.16s; }
+      @keyframes step { 50% { transform: translateY(-4px); } }
+      .bristle { transform-box: fill-box; transform-origin: center bottom; animation: bristle 6s ease-in-out infinite; }
+      @keyframes bristle { 0%,85%,100% { transform: none; } 90% { transform: scale(1.04, 1.08); } }
+      .sniff { animation: sniff 1.2s ease-in-out infinite; }
+      @keyframes sniff { 0%,60%,100% { transform: none; } 70% { transform: translate(2px,-1px); } 80% { transform: translate(0,1px); } 90% { transform: translate(2px,0); } }
+      .lid { opacity: 0; animation: lid 4.5s steps(1) infinite; }
+      @keyframes lid { 0%,94% { opacity: 0; } 95%,100% { opacity: 1; } }
+      .z { animation: z 3s ease-in-out infinite; opacity: 0; }
+      @keyframes z { 0% { opacity: 0; transform: translateY(6px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(-16px); } }
+      .heart { fill: #ff7b9c; animation: heart 2.2s ease-out infinite; opacity: 0; }
+      @keyframes heart { 0% { opacity: 0; transform: translateY(0) scale(.6); } 30% { opacity: 1; transform: translateY(-12px) scale(1); } 100% { opacity: 0; transform: translateY(-60px) scale(.8); } }
+      .spark { transform-box: fill-box; transform-origin: center; animation: spark 1.4s ease-in-out infinite; }
+      @keyframes spark { 0%,100% { opacity: 0; transform: scale(.3) rotate(0); } 50% { opacity: 1; transform: scale(1.1) rotate(45deg); } }
+      .pulse { transform-box: fill-box; transform-origin: left bottom; animation: pulse 2s ease-in-out infinite; }
+      @keyframes pulse { 50% { transform: scale(1.08); } }
+      .bob { animation: bob 2.4s ease-in-out infinite; }
+      @keyframes bob { 50% { transform: translateY(-3px); } }
+      .blade { transform-box: fill-box; transform-origin: center bottom; animation: sway 3s ease-in-out infinite alternate; }
+      @keyframes sway { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+      .leaf { animation: leaf 9s linear infinite; }
+      @keyframes leaf { 0% { transform: translate(0,-20px) rotate(0); opacity: 0; } 10% { opacity: 1; } 50% { transform: translate(24px,110px) rotate(200deg); } 90% { opacity: 1; } 100% { transform: translate(-10px,250px) rotate(400deg); opacity: 0; } }
+      .snow { animation: snow 8s linear infinite; }
+      @keyframes snow { from { transform: translate(0,-10px); } to { transform: translate(14px,270px); } }
+      .fly { animation: fly 6s ease-in-out infinite; }
+      @keyframes fly { 0%,100% { opacity: .1; transform: translate(0,0); } 30% { opacity: 1; transform: translate(12px,-10px); } 60% { opacity: .3; transform: translate(-8px,6px); } }
+      .wing { animation: wing .25s ease-in-out infinite alternate; }
+      @keyframes wing { from { transform: scaleX(1); } to { transform: scaleX(.25); } }
+      .xpbar { animation: grow 1.4s ease-out; transform-box: fill-box; transform-origin: left; }
+      @keyframes grow { from { transform: scaleX(0); } }
+      .row { opacity: 0; animation: in .4s ease-out forwards; }
+      @keyframes in { to { opacity: 1; } }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="820" height="330" fill="#0d1117"/>
+    <g>
+    <circle cx="22" cy="20" r="5.5" fill="#ff5f57"/><circle cx="40" cy="20" r="5.5" fill="#febc2e"/><circle cx="58" cy="20" r="5.5" fill="#28c840"/>
+    <text x="410" y="24" text-anchor="middle" class="t" fill="#8b949e" font-size="12">yozhik.exe — tap a button below, then press “Create” on GitHub</text>
+    <line x1="0" y1="38" x2="820" y2="38" stroke="#30363d"/>
+  </g>
+    
+    <clipPath id="scene"><rect x="0" y="39" width="340" height="291"/></clipPath>
+    <g clip-path="url(#scene)">
+      <rect x="0" y="39" width="340" height="291" fill="url(#bg)"/>
+      <g class="leaf" style="animation-duration:11.6s;animation-delay:-2.9s">
+        <path transform="translate(20,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#e8833a"/></g><g class="leaf" style="animation-duration:10.6s;animation-delay:-5.3s">
+        <path transform="translate(83,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#d9a13b"/></g><g class="leaf" style="animation-duration:10.8s;animation-delay:-7.6s">
+        <path transform="translate(119,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#c4462f"/></g><g class="leaf" style="animation-duration:10.4s;animation-delay:-6.4s">
+        <path transform="translate(183,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#b8732e"/></g><g class="leaf" style="animation-duration:8.2s;animation-delay:-3.7s">
+        <path transform="translate(265,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#e8833a"/></g><g class="leaf" style="animation-duration:10.5s;animation-delay:-0.5s">
+        <path transform="translate(232,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#d9a13b"/></g><g class="leaf" style="animation-duration:9.3s;animation-delay:-9.2s">
+        <path transform="translate(225,40)" d="M0,0 C6,-6 14,-2 12,6 C6,10 0,6 0,0 Z" fill="#c4462f"/></g><g>
+      <animateMotion dur="11s" repeatCount="indefinite" path="M40,110 C120,40 220,150 300,80 C330,60 260,40 200,90 C140,140 60,160 40,110 Z"/>
+      <g class="wing"><ellipse cx="-5" cy="0" rx="6" ry="8" fill="#bc8cff"/><ellipse cx="5" cy="0" rx="6" ry="8" fill="#ff7b9c"/></g>
+      <rect x="-1" y="-6" width="2" height="12" rx="1" fill="#2b1a12"/>
+    </g>
+      <ellipse cx="170" cy="314" rx="200" ry="40" fill="#1b3a24"/>
+      <ellipse cx="170" cy="298" rx="160" ry="16" fill="#24502f"/>
+      <g stroke="#3f8f4f" stroke-width="2" fill="none" stroke-linecap="round"><path d="M12,294 q2,-14 -3,-20 M16,294 q0,-16 4,-22 M20,294 q3,-10 7,-13" class="blade" style="animation-delay:-2.4s"/><path d="M34,294 q2,-14 -3,-20 M38,294 q0,-16 4,-22 M42,294 q3,-10 7,-13" class="blade" style="animation-delay:-2.8s"/><path d="M56,294 q2,-14 -3,-20 M60,294 q0,-16 4,-22 M64,294 q3,-10 7,-13" class="blade" style="animation-delay:-0.2s"/><path d="M78,294 q2,-14 -3,-20 M82,294 q0,-16 4,-22 M86,294 q3,-10 7,-13" class="blade" style="animation-delay:-0.6s"/><path d="M100,294 q2,-14 -3,-20 M104,294 q0,-16 4,-22 M108,294 q3,-10 7,-13" class="blade" style="animation-delay:-1s"/><path d="M122,294 q2,-14 -3,-20 M126,294 q0,-16 4,-22 M130,294 q3,-10 7,-13" class="blade" style="animation-delay:-1.4s"/><path d="M144,294 q2,-14 -3,-20 M148,294 q0,-16 4,-22 M152,294 q3,-10 7,-13" class="blade" style="animation-delay:-1.8s"/><path d="M166,294 q2,-14 -3,-20 M170,294 q0,-16 4,-22 M174,294 q3,-10 7,-13" class="blade" style="animation-delay:-2.2s"/><path d="M188,294 q2,-14 -3,-20 M192,294 q0,-16 4,-22 M196,294 q3,-10 7,-13" class="blade" style="animation-delay:-2.6s"/><path d="M210,294 q2,-14 -3,-20 M214,294 q0,-16 4,-22 M218,294 q3,-10 7,-13" class="blade" style="animation-delay:-0s"/><path d="M232,294 q2,-14 -3,-20 M236,294 q0,-16 4,-22 M240,294 q3,-10 7,-13" class="blade" style="animation-delay:-0.4s"/><path d="M254,294 q2,-14 -3,-20 M258,294 q0,-16 4,-22 M262,294 q3,-10 7,-13" class="blade" style="animation-delay:-0.8s"/><path d="M276,294 q2,-14 -3,-20 M280,294 q0,-16 4,-22 M284,294 q3,-10 7,-13" class="blade" style="animation-delay:-1.2s"/><path d="M298,294 q2,-14 -3,-20 M302,294 q0,-16 4,-22 M306,294 q3,-10 7,-13" class="blade" style="animation-delay:-1.6s"/><path d="M320,294 q2,-14 -3,-20 M324,294 q0,-16 4,-22 M328,294 q3,-10 7,-13" class="blade" style="animation-delay:-2s"/></g>
+      <ellipse cx="154" cy="290" rx="86.66666666666667" ry="7" fill="#000" opacity="0.25" class="walk"/>
+      <g class="bob" style="animation-delay:-0s"><circle cx="26" cy="288" r="7.5" fill="#f85149"/>
+      <rect x="25" y="276" width="2" height="5" fill="#5b3a29"/><ellipse cx="30" cy="277" rx="4" ry="2" fill="#3fb950"/></g><g class="bob" style="animation-delay:-0.6s"><circle cx="300" cy="288" r="7.5" fill="#f85149"/>
+      <rect x="299" y="276" width="2" height="5" fill="#5b3a29"/><ellipse cx="304" cy="277" rx="4" ry="2" fill="#3fb950"/></g><g class="bob" style="animation-delay:-1.2s"><circle cx="318" cy="288" r="7.5" fill="#f85149"/>
+      <rect x="317" y="276" width="2" height="5" fill="#5b3a29"/><ellipse cx="322" cy="277" rx="4" ry="2" fill="#3fb950"/></g>
+      <g transform="translate(50,145)">
+        <g class="walk"><g class="flip"><g class="breathe stepping"><g class="legA"><rect x="39" y="130" width="13.4" height="13.4" fill="#4a2e20"/><rect x="52" y="130" width="13.4" height="13.4" fill="#4a2e20"/></g><g class="legB"><rect x="117" y="130" width="13.4" height="13.4" fill="#4a2e20"/><rect x="130" y="130" width="13.4" height="13.4" fill="#4a2e20"/></g>
+    <g class="bristle"><rect x="78" y="0" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="0" width="13.4" height="13.4" fill="#5b3a29"/><rect x="130" y="0" width="13.4" height="13.4" fill="#5b3a29"/><rect x="52" y="13" width="13.4" height="13.4" fill="#5b3a29"/><rect x="65" y="13" width="13.4" height="13.4" fill="#5b3a29"/><rect x="78" y="13" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="91" y="13" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="13" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="117" y="13" width="13.4" height="13.4" fill="#5b3a29"/><rect x="130" y="13" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="143" y="13" width="13.4" height="13.4" fill="#5b3a29"/><rect x="39" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="52" y="26" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="65" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="78" y="26" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="91" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="26" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="117" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="130" y="26" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="143" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="156" y="26" width="13.4" height="13.4" fill="#5b3a29"/><rect x="26" y="39" width="13.4" height="13.4" fill="#5b3a29"/><rect x="39" y="39" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="52" y="39" width="13.4" height="13.4" fill="#5b3a29"/><rect x="65" y="39" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="78" y="39" width="13.4" height="13.4" fill="#5b3a29"/><rect x="91" y="39" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="104" y="39" width="13.4" height="13.4" fill="#5b3a29"/><rect x="117" y="39" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="130" y="39" width="13.4" height="13.4" fill="#5b3a29"/><rect x="143" y="39" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="13" y="52" width="13.4" height="13.4" fill="#5b3a29"/><rect x="26" y="52" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="39" y="52" width="13.4" height="13.4" fill="#5b3a29"/><rect x="52" y="52" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="65" y="52" width="13.4" height="13.4" fill="#5b3a29"/><rect x="78" y="52" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="91" y="52" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="52" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="117" y="52" width="13.4" height="13.4" fill="#5b3a29"/><rect x="130" y="52" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="13" y="65" width="13.4" height="13.4" fill="#5b3a29"/><rect x="26" y="65" width="13.4" height="13.4" fill="#5b3a29"/><rect x="39" y="65" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="52" y="65" width="13.4" height="13.4" fill="#5b3a29"/><rect x="65" y="65" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="78" y="65" width="13.4" height="13.4" fill="#5b3a29"/><rect x="91" y="65" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="104" y="65" width="13.4" height="13.4" fill="#5b3a29"/><rect x="117" y="65" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="0" y="78" width="13.4" height="13.4" fill="#5b3a29"/><rect x="13" y="78" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="26" y="78" width="13.4" height="13.4" fill="#5b3a29"/><rect x="39" y="78" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="52" y="78" width="13.4" height="13.4" fill="#5b3a29"/><rect x="65" y="78" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="78" y="78" width="13.4" height="13.4" fill="#5b3a29"/><rect x="91" y="78" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="104" y="78" width="13.4" height="13.4" fill="#5b3a29"/><rect x="117" y="78" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="0" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="13" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="26" y="91" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="39" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="52" y="91" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="65" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="78" y="91" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="91" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="91" width="13.4" height="13.4" fill="#8f5e3d"/><rect x="117" y="91" width="13.4" height="13.4" fill="#5b3a29"/><rect x="13" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="26" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="39" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="52" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="65" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="78" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="91" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="104" y="104" width="13.4" height="13.4" fill="#5b3a29"/><rect x="117" y="104" width="13.4" height="13.4" fill="#5b3a29"/></g><rect x="156" y="39" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="169" y="39" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="52" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="156" y="52" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="169" y="52" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="182" y="52" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="130" y="65" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="65" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="156" y="65" width="13.4" height="13.4" fill="#111111"/><rect x="169" y="65" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="182" y="65" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="130" y="78" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="78" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="156" y="78" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="169" y="78" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="182" y="78" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="130" y="91" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="91" width="13.4" height="13.4" fill="#f29a9a"/><rect x="156" y="91" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="169" y="91" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="182" y="91" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="130" y="104" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="104" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="156" y="104" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="169" y="104" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="26" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="39" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="52" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="65" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="78" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="91" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="104" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="117" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="130" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="143" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="156" y="117" width="13.4" height="13.4" fill="#ecc9a2"/><rect x="162.5" y="66.95" width="4.55" height="4.55" fill="#ffffff"/>
+         <rect x="156" y="65" width="13.4" height="13.4" fill="#ecc9a2" class="lid"/><g class="sniff"><rect x="195" y="78" width="13.4" height="13.4" fill="#2b1a12"/></g></g></g></g>
+      </g>
+      <g transform="translate(264,99)" class="pulse">
+      <circle cx="-22" cy="52" r="4" fill="#e6edf3" opacity="0.6"/><circle cx="-10" cy="38" r="6" fill="#e6edf3" opacity="0.6"/>
+      <ellipse cx="18" cy="10" rx="36" ry="26" fill="#e6edf3" opacity="0.92"/>
+      <circle cx="18" cy="13" r="12" fill="#f85149"/><rect x="17" y="-4" width="2.4" height="7" fill="#5b3a29"/><ellipse cx="24" cy="-2" rx="6" ry="3" fill="#3fb950"/></g>
+      <text x="12" y="318" class="t" font-size="10" fill="#ffffff" opacity="0.4">live: autumn in Volgograd</text>
+    </g>
+    <line x1="340" y1="39" x2="340" y2="330" stroke="#30363d"/>
+
+    <g class="t">
+      <text x="372" y="84" font-size="24" font-weight="700" fill="#e6edf3">Yozhik <tspan fill="#8b949e" font-weight="400" font-size="17">· Ёжик</tspan></text>
+      <text x="372" y="108" font-size="12.5" fill="#8b949e">profile hedgehog · born 2026-10-06 · 1 friend</text>
+
+      <text x="372" y="142" font-size="13" fill="#e6edf3"><tspan fill="#d29922" font-weight="700">LV 2</tspan>  12/15 xp to next level</text>
+      <rect x="372" y="150" width="410" height="9" rx="4.5" fill="#161b22" stroke="#30363d"/>
+      <rect x="372" y="150" width="328.0" height="9" rx="4.5" fill="url(#xp)" class="xpbar"/>
+
+      <text x="372" y="186" font-size="13" fill="#e6edf3">mood: <tspan fill="#39c5cf">hungry… an apple would help</tspan></text>
+      <text x="372" y="210" font-size="13" fill="#e6edf3">🍎 4 apples   🤲 1 pets   🎾 2 plays</text>
+      <line x1="372" y1="226" x2="782" y2="226" stroke="#30363d" stroke-dasharray="3 4"/>
+      <text x="372" y="248" font-size="11.5" fill="#8b949e" class="row" style="animation-delay:0.00s"><tspan fill="#58a6ff">@Modhish</tspan> fed an apple 🍎 · 1d ago</text><text x="372" y="265" font-size="11.5" fill="#8b949e" class="row" style="animation-delay:0.15s"><tspan fill="#58a6ff">@Modhish</tspan> played catch 🎾 · 3d ago</text><text x="372" y="282" font-size="11.5" fill="#8b949e" class="row" style="animation-delay:0.30s"><tspan fill="#58a6ff">@Modhish</tspan> fed an apple 🍎 · 4d ago</text><text x="372" y="299" font-size="11.5" fill="#8b949e" class="row" style="animation-delay:0.45s"><tspan fill="#58a6ff">@Modhish</tspan> played catch 🎾 · 4d ago</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="819" height="329" rx="14" fill="none" stroke="#30363d"/>
+</svg>
