@@ -1,19 +1,25 @@
 {
   "born": "2026-10-06T00:00:00Z",
-  "xp": 20,
+  "xp": 21,
   "apples": 5,
-  "pets": 1,
+  "pets": 2,
   "plays": 2,
   "lastApple": "2026-10-22T07:03:41.069Z",
   "last": {
-    "login": "Modhish",
-    "action": "apple",
-    "at": "2026-10-22T07:03:41.069Z"
+    "login": "vladislav-zotov",
+    "action": "pet",
+    "at": "2026-10-23T13:23:26.126Z"
   },
   "visitors": {
-    "Modhish": 8
+    "Modhish": 8,
+    "vladislav-zotov": 1
   },
   "history": [
+    {
+      "login": "vladislav-zotov",
+      "action": "pet",
+      "at": "2026-10-23T13:23:26.126Z"
+    },
     {
       "login": "Modhish",
       "action": "apple",
