@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="140" viewBox="0 0 820 140">
+  <defs>
+    <clipPath id="card"><rect width="820" height="140" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .t { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',monospace; }
+    .row { opacity: 0; animation: in .35s ease-out forwards; }
+    @keyframes in { to { opacity: 1; } }
+    .cur { animation: cur 1s steps(1) infinite; } @keyframes cur { 50% { opacity: 0; } }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="820" height="140" fill="#0d1117"/>
+    <g>
+    <circle cx="22" cy="20" r="5.5" fill="#ff5f57"/><circle cx="40" cy="20" r="5.5" fill="#febc2e"/><circle cx="58" cy="20" r="5.5" fill="#28c840"/>
+    <text x="410" y="24" text-anchor="middle" class="t" fill="#8b949e" font-size="12">activity — live from the GitHub events API</text>
+    <line x1="0" y1="38" x2="820" y2="38" stroke="#30363d"/>
+  </g>
+    <text x="26" y="70" class="t" font-size="13"><tspan fill="#3fb950">❯</tspan><tspan fill="#e6edf3"> git log --author=Modhish --all-repos --oneline</tspan></text><text x="26" y="98" class="t" font-size="13" fill="#8b949e">nothing public lately — probably deep in a private repo 👀</text><text x="26" y="118" class="t" font-size="13"><tspan fill="#3fb950">❯</tspan><tspan class="cur" fill="#e6edf3"> ▌</tspan></text>
+  </g>
+  <rect x="0.5" y="0.5" width="819" height="139" rx="14" fill="none" stroke="#30363d"/>
+</svg>
