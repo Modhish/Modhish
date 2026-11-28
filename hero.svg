@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="56" viewBox="0 0 820 56">
+  <style>.cur { animation: cur .9s steps(1) infinite; } @keyframes cur { 50% { opacity: 0; } }</style>
+  <rect x="0.5" y="0.5" width="819" height="55" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <g font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="17" fill="#e6edf3">
+    <text x="26" y="34" fill="#3fb950">❯</text>
+    <clipPath id="c0"><rect x="58" y="10" height="36" width="0">
+        <animate attributeName="width" values="0;391;391;0;0" keyTimes="0;0.0938;0.2250;0.2437;1" dur="16s" begin="0s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="58" y="34" clip-path="url(#c0)">Born in Cairo, building in Volgograd.<tspan fill="#58a6ff" class="cur">▌</tspan></text><clipPath id="c1"><rect x="58" y="10" height="36" width="0">
+        <animate attributeName="width" values="0;422;422;0;0" keyTimes="0;0.0938;0.2250;0.2437;1" dur="16s" begin="4s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="58" y="34" clip-path="url(#c1)">I turn complexity into clear interfaces.<tspan fill="#58a6ff" class="cur">▌</tspan></text><clipPath id="c2"><rect x="58" y="10" height="36" width="0">
+        <animate attributeName="width" values="0;453;453;0;0" keyTimes="0;0.0938;0.2250;0.2437;1" dur="16s" begin="8s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="58" y="34" clip-path="url(#c2)">I connect design decisions to working code.<tspan fill="#58a6ff" class="cur">▌</tspan></text><clipPath id="c3"><rect x="58" y="10" height="36" width="0">
+        <animate attributeName="width" values="0;330;330;0;0" keyTimes="0;0.0938;0.2250;0.2437;1" dur="16s" begin="12s" repeatCount="indefinite"/>
+      </rect></clipPath>
+      <text x="58" y="34" clip-path="url(#c3)">I build for the next iteration.<tspan fill="#58a6ff" class="cur">▌</tspan></text>
+  </g>
+</svg>
